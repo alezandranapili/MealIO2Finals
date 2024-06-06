@@ -1,0 +1,1886 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{119F4F9B-3AAF-4A81-A4ED-CCE18F6F58D1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MealIO2</RootNamespace>
+    <AssemblyName>MealIO2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppetiteLevelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppetiteLevelForm.Designer.cs">
+      <DependentUpon>AppetiteLevelForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BudgetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BudgetForm.Designer.cs">
+      <DependentUpon>BudgetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuyNowForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuyNowForm.Designer.cs">
+      <DependentUpon>BuyNowForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ErrorForm.Designer.cs">
+      <DependentUpon>ErrorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorMethodForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ErrorMethodForm.Designer.cs">
+      <DependentUpon>ErrorMethodForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuestForm.Designer.cs">
+      <DependentUpon>GuestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="label.cs" />
+    <Compile Include="LogInForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogInForm.Designer.cs">
+      <DependentUpon>LogInForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainDishForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainDishForm.Designer.cs">
+      <DependentUpon>MainDishForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal100Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal100Form.Designer.cs">
+      <DependentUpon>Meal100Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal101Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal101Form.Designer.cs">
+      <DependentUpon>Meal101Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal102Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal102Form.Designer.cs">
+      <DependentUpon>Meal102Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal103Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal103Form.Designer.cs">
+      <DependentUpon>Meal103Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal104Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal104Form.Designer.cs">
+      <DependentUpon>Meal104Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal105Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal105Form.Designer.cs">
+      <DependentUpon>Meal105Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal106Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal106Form.Designer.cs">
+      <DependentUpon>Meal106Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal107Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal107Form.Designer.cs">
+      <DependentUpon>Meal107Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal108Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal108Form.Designer.cs">
+      <DependentUpon>Meal108Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal10Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal10Form.Designer.cs">
+      <DependentUpon>Meal10Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal11Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal11Form.Designer.cs">
+      <DependentUpon>Meal11Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal12Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal12Form.Designer.cs">
+      <DependentUpon>Meal12Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal13Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal13Form.Designer.cs">
+      <DependentUpon>Meal13Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal14Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal14Form.Designer.cs">
+      <DependentUpon>Meal14Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal15Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal15Form.Designer.cs">
+      <DependentUpon>Meal15Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal16Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal16Form.Designer.cs">
+      <DependentUpon>Meal16Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal17Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal17Form.Designer.cs">
+      <DependentUpon>Meal17Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal18Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal18Form.Designer.cs">
+      <DependentUpon>Meal18Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal19Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal19Form.Designer.cs">
+      <DependentUpon>Meal19Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal1Form.Designer.cs">
+      <DependentUpon>Meal1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal20Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal20Form.Designer.cs">
+      <DependentUpon>Meal20Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal21Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal21Form.Designer.cs">
+      <DependentUpon>Meal21Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal22Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal22Form.Designer.cs">
+      <DependentUpon>Meal22Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal23Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal23Form.Designer.cs">
+      <DependentUpon>Meal23Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal24Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal24Form.Designer.cs">
+      <DependentUpon>Meal24Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal25Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal25Form.Designer.cs">
+      <DependentUpon>Meal25Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal26Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal26Form.Designer.cs">
+      <DependentUpon>Meal26Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal27Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal27Form.Designer.cs">
+      <DependentUpon>Meal27Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal28Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal28Form.Designer.cs">
+      <DependentUpon>Meal28Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal29Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal29Form.Designer.cs">
+      <DependentUpon>Meal29Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal2Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal2Form.Designer.cs">
+      <DependentUpon>Meal2Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal30Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal30Form.Designer.cs">
+      <DependentUpon>Meal30Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal31Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal31Form.Designer.cs">
+      <DependentUpon>Meal31Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal32Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal32Form.Designer.cs">
+      <DependentUpon>Meal32Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal33Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal33Form.Designer.cs">
+      <DependentUpon>Meal33Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal34Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal34Form.Designer.cs">
+      <DependentUpon>Meal34Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal35Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal35Form.Designer.cs">
+      <DependentUpon>Meal35Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal36Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal36Form.Designer.cs">
+      <DependentUpon>Meal36Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal37Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal37Form.Designer.cs">
+      <DependentUpon>Meal37Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal38Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal38Form.Designer.cs">
+      <DependentUpon>Meal38Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal39Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal39Form.Designer.cs">
+      <DependentUpon>Meal39Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal3Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal3Form.Designer.cs">
+      <DependentUpon>Meal3Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal40Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal40Form.Designer.cs">
+      <DependentUpon>Meal40Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal41Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal41Form.Designer.cs">
+      <DependentUpon>Meal41Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal42Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal42Form.Designer.cs">
+      <DependentUpon>Meal42Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal43Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal43Form.Designer.cs">
+      <DependentUpon>Meal43Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal44Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal44Form.Designer.cs">
+      <DependentUpon>Meal44Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal45Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal45Form.Designer.cs">
+      <DependentUpon>Meal45Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal46Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal46Form.Designer.cs">
+      <DependentUpon>Meal46Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal47Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal47Form.Designer.cs">
+      <DependentUpon>Meal47Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal48Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal48Form.Designer.cs">
+      <DependentUpon>Meal48Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal49Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal49Form.Designer.cs">
+      <DependentUpon>Meal49Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal4Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal4Form.Designer.cs">
+      <DependentUpon>Meal4Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal50Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal50Form.Designer.cs">
+      <DependentUpon>Meal50Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal51Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal51Form.Designer.cs">
+      <DependentUpon>Meal51Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal52Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal52Form.Designer.cs">
+      <DependentUpon>Meal52Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal53Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal53Form.Designer.cs">
+      <DependentUpon>Meal53Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal54Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal54Form.Designer.cs">
+      <DependentUpon>Meal54Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal55Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal55Form.Designer.cs">
+      <DependentUpon>Meal55Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal56Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal56Form.Designer.cs">
+      <DependentUpon>Meal56Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal57Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal57Form.Designer.cs">
+      <DependentUpon>Meal57Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal58Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal58Form.Designer.cs">
+      <DependentUpon>Meal58Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal59Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal59Form.Designer.cs">
+      <DependentUpon>Meal59Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal5Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal5Form.Designer.cs">
+      <DependentUpon>Meal5Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal60Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal60Form.Designer.cs">
+      <DependentUpon>Meal60Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal61Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal61Form.Designer.cs">
+      <DependentUpon>Meal61Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal62Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal62Form.Designer.cs">
+      <DependentUpon>Meal62Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal63Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal63Form.Designer.cs">
+      <DependentUpon>Meal63Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal64Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal64Form.Designer.cs">
+      <DependentUpon>Meal64Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal65Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal65Form.Designer.cs">
+      <DependentUpon>Meal65Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal66Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal66Form.Designer.cs">
+      <DependentUpon>Meal66Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal67Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal67Form.Designer.cs">
+      <DependentUpon>Meal67Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal68Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal68Form.Designer.cs">
+      <DependentUpon>Meal68Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal69Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal69Form.Designer.cs">
+      <DependentUpon>Meal69Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal6Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal6Form.Designer.cs">
+      <DependentUpon>Meal6Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal70Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal70Form.Designer.cs">
+      <DependentUpon>Meal70Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal71Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal71Form.Designer.cs">
+      <DependentUpon>Meal71Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal72Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal72Form.Designer.cs">
+      <DependentUpon>Meal72Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal73Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal73Form.Designer.cs">
+      <DependentUpon>Meal73Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal74Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal74Form.Designer.cs">
+      <DependentUpon>Meal74Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal75Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal75Form.Designer.cs">
+      <DependentUpon>Meal75Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal76Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal76Form.Designer.cs">
+      <DependentUpon>Meal76Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal77Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal77Form.Designer.cs">
+      <DependentUpon>Meal77Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal78Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal78Form.Designer.cs">
+      <DependentUpon>Meal78Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal79Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal79Form.Designer.cs">
+      <DependentUpon>Meal79Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal7Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal7Form.Designer.cs">
+      <DependentUpon>Meal7Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal80Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal80Form.Designer.cs">
+      <DependentUpon>Meal80Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal81Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal81Form.Designer.cs">
+      <DependentUpon>Meal81Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal82Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal82Form.Designer.cs">
+      <DependentUpon>Meal82Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal83Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal83Form.Designer.cs">
+      <DependentUpon>Meal83Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal84Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal84Form.Designer.cs">
+      <DependentUpon>Meal84Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal85Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal85Form.Designer.cs">
+      <DependentUpon>Meal85Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal86Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal86Form.Designer.cs">
+      <DependentUpon>Meal86Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal87Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal87Form.Designer.cs">
+      <DependentUpon>Meal87Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal88Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal88Form.Designer.cs">
+      <DependentUpon>Meal88Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal89Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal89Form.Designer.cs">
+      <DependentUpon>Meal89Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal8Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal8Form.Designer.cs">
+      <DependentUpon>Meal8Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal90Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal90Form.Designer.cs">
+      <DependentUpon>Meal90Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal91Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal91Form.Designer.cs">
+      <DependentUpon>Meal91Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal92Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal92Form.Designer.cs">
+      <DependentUpon>Meal92Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal93Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal93Form.Designer.cs">
+      <DependentUpon>Meal93Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal94Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal94Form.Designer.cs">
+      <DependentUpon>Meal94Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal95Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal95Form.Designer.cs">
+      <DependentUpon>Meal95Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal96Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal96Form.Designer.cs">
+      <DependentUpon>Meal96Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal97Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal97Form.Designer.cs">
+      <DependentUpon>Meal97Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal98Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal98Form.Designer.cs">
+      <DependentUpon>Meal98Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal99Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal99Form.Designer.cs">
+      <DependentUpon>Meal99Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal9Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal9Form.Designer.cs">
+      <DependentUpon>Meal9Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MealList10Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MealList10Form.Designer.cs">
+      <DependentUpon>MealList10Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MealList11Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MealList11Form.Designer.cs">
+      <DependentUpon>MealList11Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MealList12Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MealList12Form.Designer.cs">
+      <DependentUpon>MealList12Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MealList13Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MealList13Form.Designer.cs">
+      <DependentUpon>MealList13Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MealList14Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MealList14Form.Designer.cs">
+      <DependentUpon>MealList14Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MealList15Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MealList15Form.Designer.cs">
+      <DependentUpon>MealList15Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MealList1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MealList1Form.Designer.cs">
+      <DependentUpon>MealList1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MealList2Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MealList2Form.Designer.cs">
+      <DependentUpon>MealList2Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MealList3Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MealList3Form.Designer.cs">
+      <DependentUpon>MealList3Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MealList4Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MealList4Form.Designer.cs">
+      <DependentUpon>MealList4Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MealList5Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MealList5Form.Designer.cs">
+      <DependentUpon>MealList5Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MealList6Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MealList6Form.Designer.cs">
+      <DependentUpon>MealList6Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MealList7Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MealList7Form.Designer.cs">
+      <DependentUpon>MealList7Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MealList8Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MealList8Form.Designer.cs">
+      <DependentUpon>MealList8Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MealList9Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MealList9Form.Designer.cs">
+      <DependentUpon>MealList9Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MealsListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MealsListForm.Designer.cs">
+      <DependentUpon>MealsListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MethodForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MethodForm.Designer.cs">
+      <DependentUpon>MethodForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NoticeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NoticeForm.Designer.cs">
+      <DependentUpon>NoticeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PayForm.Designer.cs">
+      <DependentUpon>PayForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUp.Designer.cs">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TermsandAgreementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TermsandAgreementForm.Designer.cs">
+      <DependentUpon>TermsandAgreementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TryAgainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TryAgainForm.Designer.cs">
+      <DependentUpon>TryAgainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TutorialForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TutorialForm.Designer.cs">
+      <DependentUpon>TutorialForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AppetiteLevelForm.resx">
+      <DependentUpon>AppetiteLevelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BudgetForm.resx">
+      <DependentUpon>BudgetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuyNowForm.resx">
+      <DependentUpon>BuyNowForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ErrorForm.resx">
+      <DependentUpon>ErrorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ErrorMethodForm.resx">
+      <DependentUpon>ErrorMethodForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuestForm.resx">
+      <DependentUpon>GuestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogInForm.resx">
+      <DependentUpon>LogInForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainDishForm.resx">
+      <DependentUpon>MainDishForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal100Form.resx">
+      <DependentUpon>Meal100Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal101Form.resx">
+      <DependentUpon>Meal101Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal102Form.resx">
+      <DependentUpon>Meal102Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal103Form.resx">
+      <DependentUpon>Meal103Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal104Form.resx">
+      <DependentUpon>Meal104Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal105Form.resx">
+      <DependentUpon>Meal105Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal106Form.resx">
+      <DependentUpon>Meal106Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal107Form.resx">
+      <DependentUpon>Meal107Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal108Form.resx">
+      <DependentUpon>Meal108Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal10Form.resx">
+      <DependentUpon>Meal10Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal11Form.resx">
+      <DependentUpon>Meal11Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal12Form.resx">
+      <DependentUpon>Meal12Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal13Form.resx">
+      <DependentUpon>Meal13Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal14Form.resx">
+      <DependentUpon>Meal14Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal15Form.resx">
+      <DependentUpon>Meal15Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal16Form.resx">
+      <DependentUpon>Meal16Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal17Form.resx">
+      <DependentUpon>Meal17Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal18Form.resx">
+      <DependentUpon>Meal18Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal19Form.resx">
+      <DependentUpon>Meal19Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal1Form.resx">
+      <DependentUpon>Meal1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal20Form.resx">
+      <DependentUpon>Meal20Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal21Form.resx">
+      <DependentUpon>Meal21Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal22Form.resx">
+      <DependentUpon>Meal22Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal23Form.resx">
+      <DependentUpon>Meal23Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal24Form.resx">
+      <DependentUpon>Meal24Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal25Form.resx">
+      <DependentUpon>Meal25Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal26Form.resx">
+      <DependentUpon>Meal26Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal27Form.resx">
+      <DependentUpon>Meal27Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal28Form.resx">
+      <DependentUpon>Meal28Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal29Form.resx">
+      <DependentUpon>Meal29Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal2Form.resx">
+      <DependentUpon>Meal2Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal30Form.resx">
+      <DependentUpon>Meal30Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal31Form.resx">
+      <DependentUpon>Meal31Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal32Form.resx">
+      <DependentUpon>Meal32Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal33Form.resx">
+      <DependentUpon>Meal33Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal34Form.resx">
+      <DependentUpon>Meal34Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal35Form.resx">
+      <DependentUpon>Meal35Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal36Form.resx">
+      <DependentUpon>Meal36Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal37Form.resx">
+      <DependentUpon>Meal37Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal38Form.resx">
+      <DependentUpon>Meal38Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal39Form.resx">
+      <DependentUpon>Meal39Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal3Form.resx">
+      <DependentUpon>Meal3Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal40Form.resx">
+      <DependentUpon>Meal40Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal41Form.resx">
+      <DependentUpon>Meal41Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal42Form.resx">
+      <DependentUpon>Meal42Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal43Form.resx">
+      <DependentUpon>Meal43Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal44Form.resx">
+      <DependentUpon>Meal44Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal45Form.resx">
+      <DependentUpon>Meal45Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal46Form.resx">
+      <DependentUpon>Meal46Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal47Form.resx">
+      <DependentUpon>Meal47Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal48Form.resx">
+      <DependentUpon>Meal48Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal49Form.resx">
+      <DependentUpon>Meal49Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal4Form.resx">
+      <DependentUpon>Meal4Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal50Form.resx">
+      <DependentUpon>Meal50Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal51Form.resx">
+      <DependentUpon>Meal51Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal52Form.resx">
+      <DependentUpon>Meal52Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal53Form.resx">
+      <DependentUpon>Meal53Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal54Form.resx">
+      <DependentUpon>Meal54Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal55Form.resx">
+      <DependentUpon>Meal55Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal56Form.resx">
+      <DependentUpon>Meal56Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal57Form.resx">
+      <DependentUpon>Meal57Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal58Form.resx">
+      <DependentUpon>Meal58Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal59Form.resx">
+      <DependentUpon>Meal59Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal5Form.resx">
+      <DependentUpon>Meal5Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal60Form.resx">
+      <DependentUpon>Meal60Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal61Form.resx">
+      <DependentUpon>Meal61Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal62Form.resx">
+      <DependentUpon>Meal62Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal63Form.resx">
+      <DependentUpon>Meal63Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal64Form.resx">
+      <DependentUpon>Meal64Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal65Form.resx">
+      <DependentUpon>Meal65Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal66Form.resx">
+      <DependentUpon>Meal66Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal67Form.resx">
+      <DependentUpon>Meal67Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal68Form.resx">
+      <DependentUpon>Meal68Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal69Form.resx">
+      <DependentUpon>Meal69Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal6Form.resx">
+      <DependentUpon>Meal6Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal70Form.resx">
+      <DependentUpon>Meal70Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal71Form.resx">
+      <DependentUpon>Meal71Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal72Form.resx">
+      <DependentUpon>Meal72Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal73Form.resx">
+      <DependentUpon>Meal73Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal74Form.resx">
+      <DependentUpon>Meal74Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal75Form.resx">
+      <DependentUpon>Meal75Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal76Form.resx">
+      <DependentUpon>Meal76Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal77Form.resx">
+      <DependentUpon>Meal77Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal78Form.resx">
+      <DependentUpon>Meal78Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal79Form.resx">
+      <DependentUpon>Meal79Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal7Form.resx">
+      <DependentUpon>Meal7Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal80Form.resx">
+      <DependentUpon>Meal80Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal81Form.resx">
+      <DependentUpon>Meal81Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal82Form.resx">
+      <DependentUpon>Meal82Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal83Form.resx">
+      <DependentUpon>Meal83Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal84Form.resx">
+      <DependentUpon>Meal84Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal85Form.resx">
+      <DependentUpon>Meal85Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal86Form.resx">
+      <DependentUpon>Meal86Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal87Form.resx">
+      <DependentUpon>Meal87Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal88Form.resx">
+      <DependentUpon>Meal88Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal89Form.resx">
+      <DependentUpon>Meal89Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal8Form.resx">
+      <DependentUpon>Meal8Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal90Form.resx">
+      <DependentUpon>Meal90Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal91Form.resx">
+      <DependentUpon>Meal91Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal92Form.resx">
+      <DependentUpon>Meal92Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal93Form.resx">
+      <DependentUpon>Meal93Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal94Form.resx">
+      <DependentUpon>Meal94Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal95Form.resx">
+      <DependentUpon>Meal95Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal96Form.resx">
+      <DependentUpon>Meal96Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal97Form.resx">
+      <DependentUpon>Meal97Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal98Form.resx">
+      <DependentUpon>Meal98Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal99Form.resx">
+      <DependentUpon>Meal99Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal9Form.resx">
+      <DependentUpon>Meal9Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MealList10Form.resx">
+      <DependentUpon>MealList10Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MealList11Form.resx">
+      <DependentUpon>MealList11Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MealList12Form.resx">
+      <DependentUpon>MealList12Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MealList13Form.resx">
+      <DependentUpon>MealList13Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MealList14Form.resx">
+      <DependentUpon>MealList14Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MealList15Form.resx">
+      <DependentUpon>MealList15Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MealList1Form.resx">
+      <DependentUpon>MealList1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MealList2Form.resx">
+      <DependentUpon>MealList2Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MealList3Form.resx">
+      <DependentUpon>MealList3Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MealList4Form.resx">
+      <DependentUpon>MealList4Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MealList5Form.resx">
+      <DependentUpon>MealList5Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MealList6Form.resx">
+      <DependentUpon>MealList6Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MealList7Form.resx">
+      <DependentUpon>MealList7Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MealList8Form.resx">
+      <DependentUpon>MealList8Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MealList9Form.resx">
+      <DependentUpon>MealList9Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MealsListForm.resx">
+      <DependentUpon>MealsListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MethodForm.resx">
+      <DependentUpon>MethodForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NoticeForm.resx">
+      <DependentUpon>NoticeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PayForm.resx">
+      <DependentUpon>PayForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUp.resx">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TermsandAgreementForm.resx">
+      <DependentUpon>TermsandAgreementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TryAgainForm.resx">
+      <DependentUpon>TryAgainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TutorialForm.resx">
+      <DependentUpon>TutorialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\440582020_1119055275805553_949754298257753775_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MEALIO_LAYOUT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled design.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled design %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MEALIO_LAYOUT %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MEALIO_LAYOUT %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MEALIO_LAYOUT %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MEALIO_LAYOUT %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MEALIO_LAYOUT %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\101.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\111.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\121.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\141.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\151.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\171.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\191.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\271.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\351.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\371.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\39.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\401.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\421.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\44.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\45.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\521.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\54.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\55.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\59.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\601.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\621.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\631.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\65.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\66.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\67.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\73.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\74.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\76.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\77.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\78.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\79.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\81.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\82.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\83.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\87.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\88.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\89.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\63.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\62.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\52.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\38.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\57.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\43.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\53.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\42.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\37.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\91.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\92.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\93.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\94.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\95.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\97.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\98.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\102.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\103.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\104.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\106.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\107.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\108.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\109.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\110.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1111.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\112.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\113.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\117.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\118.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\119.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1211.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\122.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\571.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\123.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\124.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\125.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\126.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\127.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\129.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\130.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\131.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\132.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\133.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\134.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\135.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\136.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\137.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\138.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\139.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\140.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1411.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\142.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\143.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\144.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\145.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\146.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\147.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\148.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\149.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1511.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\152.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\153.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\154.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1541.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\155.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\156.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\157.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\158.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\159.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\160.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\162.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\163.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\164.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\166.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\167.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\114.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\71.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1711.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\172.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\173.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\174.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\175.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\176.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\177.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\178.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\179.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\181.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1811.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\182.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\183.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\184.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\185.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
